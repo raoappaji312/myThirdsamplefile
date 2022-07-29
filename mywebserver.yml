@@ -6,3 +6,8 @@
     apt: 
        name: apache2 
        state: present 
+  - name: start webserver on ubuntu ansible nodes
+    service: 
+        name: apache2 
+        state: sarted 
+             
