@@ -1,8 +1,0 @@
----
-- hosts: all 
-  become: yes
-  tasks: 
-  - name: inatall webserver ubuntu on ansible nodes
-    apt: 
-       name: apache2
-       state: present
