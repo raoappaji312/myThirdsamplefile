@@ -9,5 +9,4 @@
   - name: start webserver on ubuntu ansible nodes
     service: 
         name: apache2 
-        state: sarted 
-             
+        state: started 
