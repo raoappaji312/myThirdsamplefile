@@ -3,6 +3,6 @@
   become: yes 
   tasks: 
   - name: install webserver on ubuntu ansible nodes
-  apt: 
+    apt:
      name: apache2
      state: present 
