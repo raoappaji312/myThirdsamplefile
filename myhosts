@@ -3,9 +3,14 @@
 172.31.13.146
 
 [applicationservers]
-172.31.11.505
+172.31.11.55
 172.31.13.149
 
 [BDservers]
 172.31.11.59
 172.31.13.148
+
+
+[mywebservers:vars]
+mywebserverpackonubuntu= apache222
+mywebserverpackonredhat= httpd
