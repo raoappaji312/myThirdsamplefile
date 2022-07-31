@@ -9,6 +9,6 @@
     when: ansible_os_family =="Debian"
 
   - name: start webserver on ubuntu ansible nodes
-    servive: 
+    service: 
          name: apache2 
          state: started 
