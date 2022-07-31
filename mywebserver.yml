@@ -6,7 +6,7 @@
     apt: 
        name: apache2 
        state: present 
-    when: ansibe_os_family =="ubuntu"
+    when: ansibe_os_family =="Debian"
 
   - name: start webserver on ubuntu ansible nodes
     service: 
