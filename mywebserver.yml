@@ -12,6 +12,7 @@
     service: 
          name: apache2 
          state: started
+    when: ansible_os_family =="Debian"     
 
   - name: install webserver on RedHat ansible nodes
     yum: 
@@ -22,7 +23,8 @@
   - name: start webserver on RedHat ansible nodes
     service: 
          name: httpd 
-         state: started l
+         state: started
+    when: ansible_os_family =="RedHat"     
 
 
             
