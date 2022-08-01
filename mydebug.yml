@@ -10,7 +10,7 @@
     debug: 
          msg: "{{myfirsttaskresult}}"
 
-  - namee: install git 
+  - name: install git 
     apt: 
        name: git 
        state: present  
