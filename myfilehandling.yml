@@ -1,6 +1,5 @@
 ---
 - hosts: 172.31.11.50
-  become: yes 
-  tasks: 
+  become: yes
+  tasks:
   - include_tasks: myfile.yml
-    
