@@ -13,10 +13,13 @@
   - name: install git 
     apt: 
        name: git 
-       state: present  
+       state: present 
     when: myfirsttaskresult.stderr ==""
+
   - name: install tree 
-    apt: 
+    apt:
        name: tree 
-       state: present
-    when: myfirsttaskresult.stderr !=""              
+       state: 
+    when: myfirsttaaskresult.stderr !=""         
+
+            
