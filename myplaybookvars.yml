@@ -3,12 +3,12 @@
   become: yes 
   vars:
      myvar1: git
-     myvars2: wget
-     myvars3: tree
+     myvar2: wget
+     myvar3: tree
   tasks: 
-  - name: display myvars1
+  - name: display myvar1
     debug: 
-       msg: "{{myvars1}}"
+       msg: "{{myvar1}}"
 
  
  
