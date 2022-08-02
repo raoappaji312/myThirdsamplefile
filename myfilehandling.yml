@@ -1,29 +1,9 @@
 ---
 - hosts: 172.31.11.50
-  become: yes 
-  tasks:
-  - include_tasks: myfile.yml
-  - name : copy sattic file into ansible nodes 
-    copy: 
-        src: mytestfile
-        dest: /home/ubuntu/mysatticfile
-  - name: install webserver
-    apt: 
-       name: apache2 
-       state: present
-
-  - name: copy dynamic files into ansible nodes
-    template:
-          src: myindex.j2
-          dest: /var/www/html/index.html
-
-
-  - name: download internet into nodes
-    get_url:
-      url: https://get.jenkins.io/war-stable/2.346.2/jenkins.war
-      dest: /home/ubuntu/jenkins.war
-      force_basic_auth: yes
-      
-              
-
-             
+  become: yas 
+  tasks: 
+  - name: create file 
+    file: 
+        path: /home/ubuntu/mytestfile
+        state: touch 
+        
