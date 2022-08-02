@@ -5,6 +5,5 @@
   - include_tasks: myfile.yml
   - name: copy static file into ansible nodes 
     copy: 
-        src: 
+        src: mytestfile
         dest: /home/ubuntu/mystaticfile
-          
