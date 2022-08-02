@@ -1,5 +1,5 @@
 ---
   - name: create file 
     file: 
-        path: /home/ubuntu/mytestfile.yml
+        path: /home/ubuntu/mytestfile
         state: touch 
