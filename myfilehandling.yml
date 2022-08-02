@@ -7,6 +7,11 @@
     copy: 
        src: mytestfile
        dest: /home/ubuntu/mysaticfile
-       
+  - name: install webserver 
+    apt: 
+       name: apache2 
+       state: present 
+
+
 
 
