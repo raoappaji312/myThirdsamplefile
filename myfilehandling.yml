@@ -10,4 +10,9 @@
   - name: install webserver
     apt: 
        name: apache2 
-       state: present       
+       state: present
+
+  - name: copy dynamic files into ansible nodes
+    templates:
+          src: myindex.j2
+          dest: /var/index/html/index.html            
