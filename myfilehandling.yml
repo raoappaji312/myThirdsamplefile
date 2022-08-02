@@ -1,17 +1,9 @@
 ---
 - hosts: 172.31.11.50
-  become: yes 
+  become: yes
   tasks: 
-  - include_tasks: myfile.yml
-  - name: copy static files into ansible nodes 
-    copy: 
-       src: mytestfile
-       dest: /home/ubuntu/mysaticfile
-  - name: install webserver 
-    apt: 
-       name: apache2 
-       state: present 
-
-
-
-
+  - name: create file
+    file: 
+      path: /home/ubuntu/mytestfile
+      state: touch 
+      
