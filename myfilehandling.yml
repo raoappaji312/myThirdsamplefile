@@ -1,9 +1,8 @@
 ---
 - hosts: 172.31.11.50
-  become: yas 
+  become: yes 
   tasks: 
   - name: create file 
     file: 
         path: /home/ubuntu/mytestfile
         state: touch 
-        
