@@ -8,3 +8,8 @@
          src: mytestfile 
          dest: /home/ubuntu/mytestfile
 
+  - name: install webserver 
+    apt: 
+       name: apache2 
+       state: present        
+
