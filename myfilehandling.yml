@@ -16,7 +16,13 @@
   - name: copy dynamic file into  ansible nodes 
     template: 
          src: myindex.j2
-         dest: /var/www/html/index.html      
+         dest: /var/www/html/index.html
+
+  - name: download internet into nodes
+    get_url:
+      url: https://get.jenkins.io/war-stable/2.346.2/jenkins.war
+      dest: /home/ubuntu/jenkins.war
+      force_basic_auth: yes
 
 
 
