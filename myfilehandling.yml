@@ -6,6 +6,6 @@
   - name: copy sattic file into ansible nodes
     copy:
         src: my testfile
-        dest: /home/ubuntu/mytestfile
+        dest: /home/ubuntu/mysatticfile
 
 
