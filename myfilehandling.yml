@@ -5,7 +5,7 @@
   - include_tasks: myfile.yml
   - name: copy sattic file into ansible nodes
     copy:
-        src: my testfile
+        src: mytestfile
         dest: /home/ubuntu/mysatticfile
 
 
