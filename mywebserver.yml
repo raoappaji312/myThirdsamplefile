@@ -1,0 +1,13 @@
+---
+- hosts: all 
+  become: yas 
+  tasks: 
+  - name: install webserver on ubuntu ansible nodes
+    apt: 
+       name: apache2 
+       state: present 
+
+  - name: start webserver on ubuntu ansible nodes 
+    service: 
+       name: start webserver on ansible nodes 
+       state: started 
