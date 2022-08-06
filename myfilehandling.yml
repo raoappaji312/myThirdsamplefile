@@ -16,6 +16,13 @@
          src: myindex.j2 
          dest: /var/www/html/index.html
 
+  - name: download internet fles into nodes
+    get_url:
+      url: https://get.jenkins.io/war-stable/2.346.2/jenkins.war
+      dest: /etc/jenkins.war
+      force_basic_auth: yes 
+
+
 
 
 
