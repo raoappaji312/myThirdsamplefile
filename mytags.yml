@@ -3,7 +3,7 @@
   become: yes 
   tasks: 
 
-- name: git 
+- name: install git 
   apt: 
      name: git 
      state: present 
