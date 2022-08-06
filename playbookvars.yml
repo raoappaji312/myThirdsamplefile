@@ -1,0 +1,11 @@
+---
+- hosts: 172.31.8.212
+  become: 
+  vars:
+      myvar1: git 
+      myvar2: wget
+      myvar3: tree
+  taks: 
+  - name: display myvar1
+    debug: 
+        msg: "{{myvar1}}"
