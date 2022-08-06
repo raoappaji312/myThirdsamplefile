@@ -6,13 +6,16 @@
     apt: 
        name: git 
        state: present 
+    mytags: git 
 
   - name: install tree 
     apt: 
        name: tree 
-       state: present 
+       state: present
+    mytags: tree     
 
   - name: install wget 
     apt: 
        name: wget 
-       state: present            
+       state: present
+    mytags: wget                
