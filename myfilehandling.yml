@@ -2,7 +2,8 @@
 - hosts: 172.31.8.212
   become: yes 
   tasks: 
-  - name: create file
-    file: 
-        path: /home/ubuntu/mytestfile
-        state: touch 
+  - include_tasks: myfile.yml 
+  - name: copy sattic into ansible nodes 
+    copy: 
+       src: mytestfile  
+       dest: /home/ubuntu/mysatticfile  
