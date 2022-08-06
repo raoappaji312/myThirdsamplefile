@@ -2,13 +2,7 @@
 - hosts: 172.31.8.212
   become: yes 
   tasks: 
-  - include_tasks: myfile.yml
-  - name: copy sattic file into ansinle nodes
-    copy: 
-       src: mytestfile
-       dest: /home/ubuntu/mysatticfile
-  - name: install webserver
-    apt: 
-       name: apache2 
-       state: present      
-       
+  - name: create file 
+    file: 
+       path: /home/ubuntu/mytestfile
+       state: touch 
