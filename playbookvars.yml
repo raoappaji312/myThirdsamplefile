@@ -5,7 +5,7 @@
       myvar1: git 
       myvar2: wget
       myvar3: tree
-  taks: 
+  tasks: 
   - name: display myvar1
     debug: 
         msg: "{{myvar1}}"
