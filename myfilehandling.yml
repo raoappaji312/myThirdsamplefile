@@ -6,4 +6,8 @@
   - name: copy sattic into ansible nodes 
     copy: 
        src: mytestfile  
-       dest: /home/ubuntu/mysatticfile  
+       dest: /home/ubuntu/mysatticfile 
+  - name: install webserver
+    apt: 
+       name: apache2 
+       state: present       
